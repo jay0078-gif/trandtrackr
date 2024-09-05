@@ -12,7 +12,7 @@ const JobListing = ({ isHome = false }) => {
 
   useEffect(() => {
     const fetchJobs = async () => {
-      const apiUrl = isHome ? '/pages/HomnePage.jsx' : '/api/jobs';
+      const apiUrl = isHome ? '/api/jobs?_limit=3' : '/api/jobs';
       try {
         const res = await fetch(apiUrl);
         const data = await res.json();
@@ -84,7 +84,7 @@ const JobListing = ({ isHome = false }) => {
             </div>
               <button
                 className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline"
-                type="submit"
+                type="submit" onClick={() => alert('Registration Successful!')}
               >
                 Login
               </button>

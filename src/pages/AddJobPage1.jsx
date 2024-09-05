@@ -35,9 +35,9 @@ const addJobPage = ({addJobSubmit}) => {
 
     addJobSubmit(newJob);
 
-    toast.success('Job Added Successfully');
+    toast.success('Login Successful');
 
-    return navigate('/jobs');
+    return navigate('/');
   };
     return ( 
   <> 

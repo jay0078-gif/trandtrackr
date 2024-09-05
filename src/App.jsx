@@ -49,7 +49,7 @@ const App = () => {
         <Route path='*' element={<NotFoundPage />} />
       </Route>
     )
-  );
+  ); 
   return <RouterProvider router={router} />;
 };
 
